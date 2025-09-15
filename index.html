@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shubham Patil - Full-Stack Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="port.css" />
+   
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">Shubham Patil</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileBtn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="inner container" data-animate>
+      <h1>Hello, I'm Shubham Patil</h1>
+      <div class="subtitle">Java Full-Stack Developer</div>
+      <p class="desc">I specialize in building scalable, secure, and efficient web applications using Java, Spring, Spring Boot, Hibernate, and MySQL. I also work with HTML, CSS, and JavaScript for frontend development to deliver complete end-to-end solutions. Passionate about problem-solving, learning new technologies, and creating impactful projects.</p>
+
+      <div class="btns">
+        <a class="btn btn-primary" onclick="downloadResume()" href="#" title="Download Resume">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a class="btn btn-secondary" href="#projects" onclick="smoothScroll('#projects')">
+          <i class="fas fa-briefcase"></i> View Projects
+        </a>
+        <!-- <a class="btn btn-secondary" href="#" onclick="openResumeModal()">
+          <i class="fas fa-eye"></i> View Resume
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + SKILLS (Combined) -->
+  <section id="about" class="about-skills">
+    <div class="container">
+      <h2 class="section-title">About Me & Technical Skills</h2>
+      <p class="section-sub">Computer Science graduate specializing in java full-stack development and emerging technologies</p>
+
+<!-- About Section -->
+<div class="about-grid" data-animate>
+  <div class="avatar"><img src="images/WhatsApp Image 2025-09-15 at 16.47.51_edc29865.jpg" alt="not found"></div>
+  <div class="about-content">
+    <h3><i class="fas fa-user-graduate"></i> About Me</h3>
+    <p class="about-text">
+      Hi, I’m <strong>Shubham Patil</strong>, a passionate <strong>Java Full Stack Developer</strong> who enjoys
+      turning ideas into working solutions. I started my journey in software development with a strong
+      foundation in <strong>Core Java</strong> and gradually expanded into building complete web
+      applications using <strong>Spring, Spring Boot, and MySQL</strong>. Along the way, I have also worked
+      with <strong>HTML, CSS, JavaScript, Bootstrap, and Tailwind</strong> to create responsive and user-friendly
+      frontends.
+      <br><br>
+      I am currently pursuing <strong>Full Stack Java Developer training at Naresh IT</strong>, where I am
+      sharpening both frontend and backend expertise, diving deeper into topics like <strong>REST APIs,
+      Microservices, and React</strong>. Beyond coding, I love exploring new technologies, collaborating in
+      teams, and continuously improving myself to match industry standards.
+      <br><br>
+      My goal is to contribute as a <strong>Full Stack Java Developer</strong> in a forward-looking organization
+      where I can apply my skills, learn from experts, and grow into a professional who delivers
+      high-quality solutions.
+    </p>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Skills Section -->
+      <div class="skills-section" data-animate>
+        <h3><i class="fas fa-tools"></i> Technical Expertise</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4><i class="fas fa-code"></i> Programming Languages</h4>
+            <div class="tags">
+              <span class="tag">C</span>
+              <span class="tag">C++</span>
+              <span class="tag">Java</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4><i class="fas fa-paint-brush"></i> Frontend Development</h4>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4><i class="fas fa-server"></i> Backend & Frameworks</h4>
+            <div class="tags">
+              <span class="tag">Spring Boot</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4><i class="fas fa-database"></i> Database & Tools</h4>
+            <div class="tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Eclipse</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">Showcasing my development skills through real-world applications and innovative solutions</p>
+
+      <div class="projects-grid" data-animate>
+  <!-- Pharma Care -->
+  <article class="project">
+    <div class="heroImg">💊</div>
+    <div class="content">
+      <h3 class="project-title">Pharma Care — Pharmacy Management System</h3>
+      <div class="tech">Java • Spring Boot • MySQL</div>
+      <p class="project-description">
+        A web-based application designed to manage pharmacy operations including medicines,
+        stock, and customer records. The system helps streamline daily activities, ensures
+        accurate inventory tracking, and provides easy access to essential pharmacy data.
+      </p>
+      <div class="links">
+        <a class="project-link" href="https://github.com/yourusername/pharmacare" target="_blank">
+          <i class="fab fa-github"></i> View Code
+        </a>
+      </div>
+    </div>
+  </article>
+</div>
+
+
+        <!-- Freelancing Marketplace -->
+       <!-- Freelancer Job Marketplace -->
+<article class="project">
+  <div class="heroImg">⚡</div>
+  <div class="content">
+    <h3 class="project-title">Freelancer Job Marketplace (Ongoing)</h3>
+    <div class="tech">Java • Spring Boot • MySQL • HTML • CSS • JavaScript</div>
+    <p class="project-description">
+      A web-based platform designed to connect freelancers with clients for job postings
+      and project collaborations. Currently under development, with backend modules in
+      progress to handle secure job posting, bidding, and transaction management.
+    </p>
+    <div class="links">
+      <a class="project-link" href="https://github.com/yourusername/freelancer-marketplace" target="_blank">
+        <i class="fab fa-github"></i> View Code
+      </a>
+    </div>
+  </div>
+</article>
+
+
+<!-- Amazon Clone (Frontend Project) -->
+<article class="project">
+  <div class="heroImg">🛒</div>
+  <div class="content">
+    <h3 class="project-title">Amazon Clone — Frontend Project</h3>
+    <div class="tech">HTML • CSS • JavaScript • Bootstrap</div>
+    <p class="project-description">
+      A simple frontend clone of Amazon's e-commerce interface, built for practice and learning.
+      Implements product listing, navigation bar, search bar, and responsive design using HTML, CSS,
+      and JavaScript.
+    </p>
+    <div class="links">
+      <a class="project-link" href="https://github.com/yourusername/amazon-clone" target="_blank">
+        <i class="fab fa-github"></i> View Code
+      </a>
+    </div>
+  </div>
+</article>
+
+
+  <!-- EXPERIENCE & CERTIFICATIONS -->
+ <section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title">Experience & Certifications</h2>
+    <p class="section-sub">Professional journey, training programs, and notable achievements</p>
+
+    <div class="experience-content" data-animate>
+      <div class="exp-grid">
+        <div class="exp">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Internship – Java Development</div>
+              <div class="exp-company">Abisinfo Tech</div>
+            </div>
+            <div class="exp-period">Jan 2025 – Jun 2025</div>
+          </div>
+          <p class="exp-desc">Worked on practical Java-based projects, gaining hands-on experience in backend development, database integration, and real-world application workflows.</p>
+        </div>
+
+        <div class="exp">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Training & Internship – Full Stack Development</div>
+              <div class="exp-company">ExcelR</div>
+            </div>
+            <div class="exp-period">Feb 2025 – Sep 2025</div>
+          </div>
+          <p class="exp-desc">Completed an intensive full-stack training program while working on internship projects. Focused on Java, Spring Boot, frontend development, and practical project implementations.</p>
+        </div>
+
+        <div class="exp">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Full-Stack Java Developer Training</div>
+              <div class="exp-company">Naresh IT</div>
+            </div>
+            <div class="exp-period">Ongoing</div>
+          </div>
+          <p class="exp-desc">Currently undergoing professional training covering advanced Java, Spring Boot, REST APIs, microservices, and building industry-ready applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect & Collaborate</h2>
+      <p class="section-sub">Ready to work on exciting projects together? Get in touch through any of the channels below</p>
+
+      <div class="contact-content" data-animate>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+          <a href="mailto:shree22kar2411@gmail">Get in touch by E-mail</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/shubham-patil-8b7b4122a/" target="_blank">LinkedIn Profile</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Shubhamp2611" target="_blank">GitHub Profile</a>
+          </div>
+        </div>
+
+          <!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-sub">Ready to work on exciting projects together? Get in touch through info below</p>
+
+    <div class="contact-content" data-animate>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:shree22kar2411@gmail">Connect by E-mail</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/shubham-patil-8b7b4122a/" target="_blank">Connect by LinkedIn</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/Shubhamp2611" target="_blank">Connect by github</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+9179684145">+91 91796 84145</a>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" class="form-input" placeholder="Your Name" required>
+        <input type="email" class="form-input" placeholder="Your Email" required>
+        <textarea class="form-input form-textarea" placeholder="Your Message" required></textarea>
+        <div class="form-buttons">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="reset" class="btn btn-secondary">Clear</button>
+        </div>
+      </form>
+
+      <div class="socials">
+        <a href="https://github.com/Shubhamp2611" target="_blank" class="social"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-patil-8b7b4122a/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:shree22kar2411@gmail" class="social"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RESUME MODAL -->
+<div class="modal" id="resumeModal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeResumeModal()"><i class="fas fa-times"></i></button>
+    <iframe src="resume.pdf" type="application/pdf"></iframe>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Shubham Patil. All Rights Reserved.</p>
+    <p>
+      <a href="#home">Home</a> • 
+      <a href="#about">About</a> • 
+      <a href="#projects">Projects</a> • 
+      <a href="#experience">Experience</a> • 
+      <a href="#contact">Contact</a>
+    </p>
+  </div>
+</footer>
+    <script src="port.js"></script>
